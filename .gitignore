@@ -1,0 +1,29 @@
+# Ignore Composer generated directories.
+drush/contrib
+vendor
+web/core
+web/libraries
+web/modules/contrib
+web/profiles/contrib
+web/themes/contrib
+
+# Ignore Drupal 'files' directory.
+web/sites/*/files
+
+# Ignore PhpStorm generated directories.
+.idea
+
+# Ignore Mac OS X generated directories.
+.DS_Store
+
+# Ignore Vagrant generated directory.
+.vagrant
+
+# Ignore local Drupal settings file.
+setting.local.php
+
+# Ignore local Drupal VM config file.
+config/local.config.yml
+
+# Ignore Drupal Console directory.
+console
