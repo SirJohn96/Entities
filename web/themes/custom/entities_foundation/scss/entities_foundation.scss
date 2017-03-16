@@ -1,0 +1,35 @@
+// Entities Main Stylesheet for Imports
+
+// Make sure the charset is set appropriately
+@charset 'utf-8';
+
+//This is your _settings.scss file where you can override foundation variables.
+@import 'settings';
+
+// Core
+// The following imports bootstrap the theme.
+@import 'foundation';
+@import 'motion-ui';
+
+// Set flex to true to enable the new Foundation 6 flex grid.
+$flex: false;
+@include foundation-everything($flex);
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+// Base
+@import 'base/mixins';
+@import 'base/common';
+@import 'base/drupal';
+@import 'base/elements';
+
+// Layout
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/aside';
+@import 'layout/footer';
+
+// Modules
+@import 'modules/block';
+@import 'modules/button';
